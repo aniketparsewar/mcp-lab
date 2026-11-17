@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "local-tools": {
+      "args": [
+        "C:\\path\\to\\mcp-lab\\server\\local_tools_server.py"
+      ],
+      "command": "python"
+    },
+    "shipdocchat": {
+      "args": [
+        "C:\\path\\to\\mcp-lab\\server\\shipdoc_server.py"
+      ],
+      "command": "python",
+      "env": {
+        "SHIPDOCCHAT_API_KEY": "your-shipdocchat-key",
+        "SHIPDOCCHAT_URL": "https://ship-docchat.onrender.com"
+      }
+    }
+  }
+}
