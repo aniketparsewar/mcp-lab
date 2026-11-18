@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mcp-lab
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: LAB_MCP_TOKEN
+        sync: false # set your lab token value in the Render dashboard
+      - key: PYTHON_VERSION
+        value: "3.12.0"
